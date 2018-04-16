@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+  </head>
+  <body ng-controller="testCtrl">
+    <div>
+      {{piNumber | number : 2}}
+    </div>
+    <script>
+    var testApp = angular.module('app',[]);
+    testApp.controller('testCtrl', function($scope){
+      $scope.piNumber = 3.14159265359;
+    });
+    </script>
+  </body>
+</html>
